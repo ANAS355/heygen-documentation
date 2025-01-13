@@ -37,7 +37,7 @@ The Heygen API uses an API key for authentication. You must include your API key
 
 ### Header Format
 
-```json
+```typescript
 {
     'Content-Type': 'application/json',
     'accept': 'application/json',
@@ -67,7 +67,7 @@ https://api.heygen.com/v1
 
 #### Request Body
 
-```json
+```typescript
 {
     quality: "high" | "medium" | "low";
     avatar_name?: string;
@@ -80,7 +80,7 @@ https://api.heygen.com/v1
 
 #### Response Format
 
-```json
+```typescript
 {
     code: number;
     message: string;
@@ -108,7 +108,7 @@ ICEServer {
 
 #### Request Body
 
-```json
+```typescript
 {
     session_id: string;
     candidate: Object;
@@ -117,7 +117,7 @@ ICEServer {
 
 #### Response Format
 
-```json
+```typescript
 {
     status: string;
 }
@@ -133,7 +133,7 @@ ICEServer {
 
 #### Request Body
 
-```json
+```typescript
 {
     session_id: string;
     sdp: RTCSessionDescriptionInit;
@@ -142,7 +142,7 @@ ICEServer {
 
 #### Response Format
 
-```json
+```typescript
 {
     status: string;
 }
@@ -158,7 +158,7 @@ ICEServer {
 
 #### Request Body
 
-```json
+```typescript
 {
     session_id: string;
     text: string;
@@ -169,7 +169,7 @@ ICEServer {
 
 #### Response Format
 
-```json
+```typescript
 {
     duration_ms: number;
 }
