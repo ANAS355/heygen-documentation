@@ -6,6 +6,8 @@ Welcome to the **Heygen API** documentation! This guide provides a comprehensive
 
 **This code is meant for closed POC presentation and testing. Therefore no security is implemented. So it is a must to refactor the APIs calls into a backend where the HeyGen API_KEY is safe.**
 
+Also keep in mind to always close the connection after finishing. if the page is refreashed without closing the connection HeyGen will automatically close the session after 2 mins.
+
 ## Table of Contents
 
 * [Introduction](https://chatgpt.com/c/6784a303-b750-8007-a365-fe883a56b6e9#introduction)
